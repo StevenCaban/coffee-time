@@ -1,0 +1,182 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #f0ece4;
+  transition: background 0.1s;
+}
+
+.screen.flash {
+  animation: flashAnim 1s ease-out;
+}
+
+@keyframes flashAnim {
+  0% { background: #4a3218; }
+  100% { background: #1a1a1a; }
+}
+
+.backBtn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  transition: color 0.15s;
+}
+
+.backBtn:hover {
+  color: #f0ece4;
+}
+
+.brewInfo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.brewName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.brewDetails {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+.timerBlock {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stepLabel {
+  font-size: 1.1rem;
+  color: #b5895a;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.03em;
+}
+
+.countdown {
+  font-size: 5rem;
+  font-weight: 200;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.progress {
+  margin-top: 0.6rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.doneBlock {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doneText {
+  font-size: 4rem;
+  font-weight: 200;
+  color: #b5895a;
+}
+
+.doneSubtext {
+  color: #888;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.primary, .secondary {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.primary {
+  background: #b5895a;
+  color: #1a1a1a;
+}
+
+.secondary {
+  background: #2d2d2d;
+  color: #f0ece4;
+  border: 1px solid #444;
+}
+
+.primary:hover, .secondary:hover {
+  opacity: 0.85;
+}
+
+.stepList {
+  width: 100%;
+  max-width: 420px;
+}
+
+.stepRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  margin-bottom: 0.4rem;
+  background: #222;
+  border: 1px solid transparent;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.stepRow.active {
+  border-color: #b5895a;
+  background: #2a2218;
+}
+
+.stepRow.done {
+  opacity: 0.45;
+}
+
+.stepMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.stepName {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.stepNotes {
+  font-size: 0.78rem;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stepDur {
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  color: #b5895a;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}

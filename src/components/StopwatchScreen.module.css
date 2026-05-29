@@ -1,0 +1,107 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #f0ece4;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #b5895a;
+  margin: 0 0 2rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.timerBlock {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.stepTime {
+  font-size: 4rem;
+  font-weight: 300;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.totalTime {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  color: #b5895a;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.primary, .secondary, .danger {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.primary {
+  background: #b5895a;
+  color: #1a1a1a;
+}
+
+.secondary {
+  background: #2d2d2d;
+  color: #f0ece4;
+  border: 1px solid #444;
+}
+
+.danger {
+  background: #8b3a3a;
+  color: #f0ece4;
+}
+
+.primary:hover, .secondary:hover, .danger:hover {
+  opacity: 0.85;
+}
+
+.stepList {
+  width: 100%;
+  max-width: 420px;
+}
+
+.stepList h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin: 0 0 0.75rem;
+}
+
+.stepRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.75rem;
+  background: #252525;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+}
+
+.stepNum {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.stepDur {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #f0ece4;
+}

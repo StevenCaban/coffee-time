@@ -1,0 +1,189 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #f0ece4;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #f0ece4;
+  margin: 0 0 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.topActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.newBrew {
+  padding: 0.75rem 2rem;
+  background: #b5895a;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.newBrew:hover {
+  opacity: 0.85;
+}
+
+.transferBtns {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.transferBtn {
+  padding: 0.4rem 1rem;
+  background: #252525;
+  color: #aaa;
+  border: 1px solid #383838;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.transferBtn:hover {
+  color: #f0ece4;
+  border-color: #666;
+}
+
+.toast {
+  background: #2a3a2a;
+  color: #7ecf7e;
+  border: 1px solid #3a5a3a;
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 0.2s ease;
+}
+
+.toast.toastError {
+  background: #3a2a2a;
+  color: #cf7e7e;
+  border-color: #5a3a3a;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.empty {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  max-width: 480px;
+}
+
+.sectionTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin: 0 0 0.75rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #222;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.card:hover {
+  border-color: #b5895a;
+  background: #252525;
+}
+
+.cardInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.brewName {
+  font-size: 1.05rem;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.brewDetails {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 0.15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  font-size: 0.78rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.exportBtn, .editBtn, .deleteBtn {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+
+.exportBtn {
+  color: #555;
+}
+
+.exportBtn:hover {
+  color: #7eb5b5;
+}
+
+.editBtn {
+  color: #555;
+}
+
+.editBtn:hover {
+  color: #b5895a;
+}
+
+.deleteBtn {
+  color: #555;
+}
+
+.deleteBtn:hover {
+  color: #c0392b;
+}

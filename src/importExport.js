@@ -2,12 +2,12 @@ const FILE_VERSION = 1;
 
 export function exportBrew(brew) {
   const payload = JSON.stringify({ version: FILE_VERSION, brews: [brew] }, null, 2);
-  triggerDownload(payload, `${slugify(brew.name)}.coffee-timer.json`);
+  triggerDownload(payload, `${slugify(brew.name)}.coffee-time.json`);
 }
 
 export function exportAllBrews(brews) {
   const payload = JSON.stringify({ version: FILE_VERSION, brews }, null, 2);
-  triggerDownload(payload, 'all-brews.coffee-timer.json');
+  triggerDownload(payload, 'all-brews.coffee-time.json');
 }
 
 export function parseImportFile(file) {

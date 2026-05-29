@@ -25,7 +25,7 @@ export function BrewListScreen({ brews, onSelect, onDelete, onEdit, onNewBrew, o
 
   return (
     <div className={styles.screen}>
-      <h1 className={styles.title}>Coffee Timer</h1>
+      <h1 className={styles.title}>Coffee Time</h1>
 
       <div className={styles.topActions}>
         <button className={styles.newBrew} onClick={onNewBrew}>+ New Brew</button>

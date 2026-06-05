@@ -1,6 +1,6 @@
 # Coffee Time
 
-A minimal coffee/tea/beer/anything brewing timer focused on simplicity and repeatablility. Record your brew steps with a stopwatch type interface, save them as named recipes, then replay any brew with a guided countdown.
+A minimal coffee/tea/beer/anything brewing timer focused on simplicity and repeatability. Record your brew steps with a stopwatch type interface, save them as named recipes, then replay any brew with a guided countdown.
 
 ![hero](src/assets/hero.svg)
 

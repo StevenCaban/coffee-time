@@ -1,17 +1,17 @@
 # Coffee Time
 
-A minimal pour-over coffee timer built with React. Record your brew steps with a stopwatch, save them as named recipes, then replay any brew with a guided countdown.
+A minimal coffee/tea/beer/anything brewing timer focused on simplicity and repeatablility. Record your brew steps with a stopwatch type interface, save them as named recipes, then replay any brew with a guided countdown.
 
-![hero](src/assets/hero.png)
+![hero](src/assets/hero.svg)
 
 ## Features
 
-- **Record** — Start a stopwatch and tap "New Step" at each pour. Stop when done.
+- **Record** — Start a brew and tap "New Step" at each step. Tap stop when finished.
 - **Save** — Name your brew, add details (dose, water, temperature), and label each step.
 - **Replay** — Select a saved brew and follow along step-by-step with a countdown timer.
 - **Edit** — Update brew name, details, or step labels and notes at any time.
-- **Export / Import** — Back up individual brews or your full list as JSON files.
-- **Offline-first** — All data lives in `localStorage`; no account or server required.
+- **Export / Import** — Back up individual brews or your full list as JSON files to move devices or to share with other users.
+- **Offline-first** — All data lives in `localStorage`; no account required.
 
 ## Getting Started
 
@@ -29,13 +29,12 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 | `npm run dev` | Start the development server |
 | `npm run build` | Build for production |
 | `npm run preview` | Preview the production build locally |
-| `npm run lint` | Run ESLint |
 
-## Tech Stack
+## Stack
 
 - [React 19](https://react.dev/)
 - [Vite 8](https://vitejs.dev/)
-- CSS Modules
+- React CSS Modules
 
 ## Project Structure
 

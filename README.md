@@ -15,6 +15,10 @@ A minimal coffee/tea/beer/anything brewing timer focused on simplicity and repea
 
 ## Getting Started
 
+The app is hosted and fully useable at [https://stevencaban.github.io/coffee-time/](https://stevencaban.github.io/coffee-time/)
+
+If you would like to self host, clone the repo then run...
+
 ```bash
 npm install
 npm run dev
